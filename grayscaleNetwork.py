@@ -1,3 +1,10 @@
+"""
+Nick Pellegrino
+Old FRI code
+My first Neural Network
+Just takes color pixels (255, 255, 255) and learns to turn them to grayscale (255)
+"""
+
 import numpy as np
 import sys
 import os
