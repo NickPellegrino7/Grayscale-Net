@@ -1,8 +1,11 @@
 """
 Nick Pellegrino
-Old FRI code
 My first Neural Network
 Just takes color pixels (255, 255, 255) and learns to turn them to grayscale (255)
+Results aren't amazing but it works
+
+Old FRI lab
+Lab was literally "make a neural network" with no other instructions lol
 """
 
 import numpy as np
@@ -35,7 +38,7 @@ def sigmoid(x):
     return 1/(1+np.exp(-x))
 
 ## Derivative of the sigmoid function.
-## Derivative = sigmoid(x) * sigmoid(1-x)
+## Derivative = sigmoid(x) * (1-sigmoid(x))
 def sigmoid_derivative(x):
     return sigmoid(x)*(1-sigmoid(x))
 
